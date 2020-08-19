@@ -1,7 +1,7 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-19 19:00:53
- * @LastEditTime: 2020-08-19 19:12:19
+ * @LastEditTime: 2020-08-19 19:34:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/eslint-config-blend-react/lib/eslint-config-blend-react.js
@@ -40,6 +40,7 @@ module.exports = {
         eqeqeq: 2, //必须使用全等
         curly: [2, 'all'], //必须使用 if(){} 中的{}
         camelcase: 2, //强制驼峰法命名
+
         'consistent-this': [2, 'that'], //this别名
         'no-unused-vars': [1], //不能有声明后未被使用的变量或参数
         'no-alert': 0, //禁止使用alert confirm
@@ -47,8 +48,8 @@ module.exports = {
         'no-undef': 0,
         'react/jsx-uses-react': 1, //针对react相关Dom变量处理
         'react/jsx-uses-vars': 1,
-        // 禁止使用 var
-        'no-var': 'error',
+
+        'no-var': 'error', // 禁止使用 var
         'arrow-parens': 0,
         'generator-star-spacing': 0,
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
@@ -63,8 +64,7 @@ module.exports = {
         {
             files: ['*.ts', '*.tsx'],
             plugins: [
-                //使用的插件，是个npm包
-                '@typescript-eslint',
+                '@typescript-eslint', //使用的插件，是个npm包
             ],
             extends: ['plugin:@typescript-eslint/recommended'],
             parser: '@typescript-eslint/parser',
