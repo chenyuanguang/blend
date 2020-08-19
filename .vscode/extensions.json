@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint", //eslint校验
+        "esbenp.prettier-vscode" //prettier格式化
+    ]
+}

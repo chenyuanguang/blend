@@ -1,0 +1,32 @@
+{
+  "name": "blend-react",
+  "version": "0.0.0",
+  "description": "react核心构建配置",
+  "keywords": [
+    "react-config",
+    "react-webpack",
+    "react-hooks",
+    "react-项目模板"
+  ],
+  "author": "chenyuanguang <cygdream@qq.com>",
+  "homepage": "https://github.com/chenyuanguang/blend#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyuanguang/blend.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/chenyuanguang/blend/issues"
+  }
+}
