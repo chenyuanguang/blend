@@ -54,7 +54,9 @@
         "test": "__tests__"
     },
     "files": [
-        "lib"
+        "lib",
+        "config",
+        "bin"
     ],
     "repository": {
         "type": "git",
