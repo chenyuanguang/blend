@@ -9,8 +9,7 @@
         "react-项目模板"
     ],
     "bin": {
-        "blend-react-start": "webpack-dev-server --config bin/webpack.dev.js",
-        "blend-react-build": "webpack --config bin/webpack.build.js"
+        "blend-react-start": "./bin/start.js"
     },
     "dependencies": {
         "@teamsupercell/typings-for-css-modules-loader": "^2.2.1",
