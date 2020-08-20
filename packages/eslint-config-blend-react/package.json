@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-blend-react",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "针对react项目的规范",
     "author": "chenyuanguang <chenyuanguang@cmcm.com>",
     "homepage": "https://github.com/chenyuanguang/blend#readme",

@@ -1,6 +1,6 @@
 {
     "name": "blend-prettier-config",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "配合eslint-config-blend-*的prettier配置",
     "keywords": [
         "prettier",
