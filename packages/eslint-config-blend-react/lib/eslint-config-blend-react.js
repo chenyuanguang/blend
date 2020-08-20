@@ -1,7 +1,7 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-19 19:00:53
- * @LastEditTime: 2020-08-20 11:56:35
+ * @LastEditTime: 2020-08-20 14:24:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/eslint-config-blend-react/lib/eslint-config-blend-react.js
@@ -32,7 +32,6 @@ module.exports = {
         'prettier',
     ],
     plugins: ['react', 'react-hooks'],
-
     rules: {
         quotes: [2, 'single'], //字符串必须使用单引号
         semi: [2, 'always'], //语句强制分号结尾(可选)
