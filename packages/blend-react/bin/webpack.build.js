@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var config = require('./config');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const merge = require('webpack-merge');

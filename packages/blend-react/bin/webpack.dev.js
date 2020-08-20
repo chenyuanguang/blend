@@ -1,11 +1,4 @@
-/*
- * @Author: chenyuanguang
- * @Date: 2020-08-10 18:55:14
- * @LastEditTime: 2020-08-12 16:33:34
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /react-router-redux-auto/config/webpack.dev.js
- */
+#!/usr/bin/env node
 
 var webpack = require('webpack');
 var config = require('./config');
