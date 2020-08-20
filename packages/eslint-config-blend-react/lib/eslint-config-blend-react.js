@@ -1,7 +1,7 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-19 19:00:53
- * @LastEditTime: 2020-08-20 11:33:22
+ * @LastEditTime: 2020-08-20 11:53:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/eslint-config-blend-react/lib/eslint-config-blend-react.js
@@ -82,8 +82,8 @@ module.exports = {
                     'error',
                     'interface',
                 ],
-                '@typescript-eslint/no-explicit-any': 'off',
-                '@typescript-eslint/explicit-module-boundary-types': 'off',
+                '@typescript-eslint/no-explicit-any': 0,
+                '@typescript-eslint/explicit-module-boundary-types': 0,
                 '@typescript-eslint/indent': [2, 4, { SwitchCase: 1 }],
             },
         },
