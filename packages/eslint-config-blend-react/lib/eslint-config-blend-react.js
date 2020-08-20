@@ -1,7 +1,7 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-19 19:00:53
- * @LastEditTime: 2020-08-20 11:53:26
+ * @LastEditTime: 2020-08-20 11:56:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/eslint-config-blend-react/lib/eslint-config-blend-react.js
@@ -69,7 +69,7 @@ module.exports = {
             extends: ['plugin:@typescript-eslint/recommended'],
             parser: '@typescript-eslint/parser',
             parserOptions: {
-                //指定语言的规则
+                //指定ts语言的规则
                 project: './tsconfig.json',
                 ecmaFeatures: {
                     jsx: true,
