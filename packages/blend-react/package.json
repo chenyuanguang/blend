@@ -48,7 +48,7 @@
     "author": "chenyuanguang <cygdream@qq.com>",
     "homepage": "https://github.com/chenyuanguang/blend#readme",
     "license": "ISC",
-    "main": "index.js",
+    "main": "lib/blend-react.js",
     "directories": {
         "lib": "lib",
         "test": "__tests__"
