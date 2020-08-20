@@ -1,0 +1,32 @@
+{
+  "name": "blend-prettier-config",
+  "version": "0.0.1",
+  "description": "配合eslint-config-blend-*的prettier配置",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "blend-prettier",
+    "blend"
+  ],
+  "author": "chenyuanguang <chenyuanguang@cmcm.com>",
+  "homepage": "https://github.com/chenyuanguang/blend#readme",
+  "license": "ISC",
+  "main": "lib/blend-prettier-config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyuanguang/blend.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/chenyuanguang/blend/issues"
+  }
+}
