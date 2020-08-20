@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-11 12:05:12
- * @LastEditTime: 2020-08-17 18:38:25
+ * @LastEditTime: 2020-08-20 18:19:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /react-router-redux-auto/config/webpack.base.js
@@ -15,15 +15,15 @@ const config = require('./config');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const deviceHtml = require('./device');
-deviceHtml();
+// deviceHtml();
 
 const eslintTest = [
     {
         test: /\.(js|jsx|tsx)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
-        include: [path.resolve(__dirname, '../src')], // 指定检查的目录,
-        exclude: [path.resolve(__dirname, '../node_modules')],
+        include: [path.resolve(process.cwd(), './src')], // 指定检查的目录,
+        exclude: [path.resolve(process.cwd(), './node_modules')],
     },
 ];
 module.exports = {
@@ -80,7 +80,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, '../src/static'),
+                    from: path.resolve(process.cwd(), './src/static'),
                     to: config.base.outputPath + '/static',
                     globOptions: {
                         ignore: ['.*'],

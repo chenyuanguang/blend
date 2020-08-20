@@ -1,13 +1,14 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-10 18:55:14
- * @LastEditTime: 2020-08-11 15:55:22
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-20 18:25:50
+ * @LastEditors: Please set LastEditors
  * @Description: chenyuanguang
  * @FilePath: /react-router-redux-auto/config/device.js
  */
 let config = require('./config');
 let fs = require('fs');
+const path = require('path');
 let deviceHtml = {
     mobile() {
         let str = `<!DOCTYPE html>
@@ -66,12 +67,16 @@ let deviceHtml = {
                 <div id="root"></div>
             </body>
             </html>`;
-        fs.writeFile('./src/index.html', str, (err) => {
-            if (err) {
-                throw err;
+        fs.writeFile(
+            path.resolve(process.cwd(), './src/index.html'),
+            str,
+            (err) => {
+                if (err) {
+                    throw err;
+                }
+                console.log('The file has been saved!');
             }
-            console.log('The file has been saved!');
-        });
+        );
     },
 };
 

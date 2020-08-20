@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-10 18:55:14
- * @LastEditTime: 2020-08-20 16:16:51
+ * @LastEditTime: 2020-08-20 18:24:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /react-router-redux-auto/config/config.js
@@ -52,7 +52,7 @@ module.exports = {
                 secure: false,
             },
         },
-        before: require('./mock/index'),
+        // before: require('./mock/index'),
     },
     //   线上环境
     build: {
