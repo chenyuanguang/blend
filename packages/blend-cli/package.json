@@ -1,6 +1,6 @@
 {
     "name": "blend-cli",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "自动化创建（webpack+react）（webpack+vue）项目",
     "main": "index.js",
     "scripts": {
