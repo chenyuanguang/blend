@@ -1,4 +1,8 @@
+#!/usr/bin/env node
 let spawn = require('../utils/spawn.js');
-spawn('webpack-dev-server --config bin/webpack.dev.js').then(() => {
+let paht = require('path');
+spawn('webpack-dev-server --config config/webpack.dev.js', {
+    cwd: path.resolve(__dirname, '..'),
+}).then(() => {
     console.log('正在启动');
 });

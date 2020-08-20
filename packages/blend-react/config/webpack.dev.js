@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var webpack = require('webpack');
 var config = require('./config');
 const { merge } = require('webpack-merge');
