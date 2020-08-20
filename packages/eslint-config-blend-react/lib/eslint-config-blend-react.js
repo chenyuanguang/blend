@@ -1,7 +1,7 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-19 19:00:53
- * @LastEditTime: 2020-08-19 19:34:20
+ * @LastEditTime: 2020-08-20 11:33:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/eslint-config-blend-react/lib/eslint-config-blend-react.js
@@ -54,11 +54,11 @@ module.exports = {
         'generator-star-spacing': 0,
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
 
-        'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/rules-of-hooks': 1,
+        'react-hooks/exhaustive-deps': 1,
 
         'react/jsx-indent': [2, 4, { indentLogicalExpressions: true }],
-        'react/prop-types': 'off',
+        'react/prop-types': 0,
     },
     overrides: [
         {
