@@ -1,6 +1,6 @@
 {
     "name": "blend-spinner",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "自动化命令行loading node-loading ",
     "keywords": [
         "自动化命令行loading",
@@ -13,8 +13,8 @@
     "license": "ISC",
     "main": "lib/blend-spinner.js",
     "dependencies": {
-        "ora": "^5.0.0",
-        "cli-spinners": "^2.4.0"
+        "cli-spinners": "^2.4.0",
+        "ora": "^5.0.0"
     },
     "directories": {
         "lib": "lib",
