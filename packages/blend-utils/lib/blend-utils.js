@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 23:45:46
- * @LastEditTime: 2020-08-21 23:51:18
+ * @LastEditTime: 2020-08-22 00:09:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/blend-utils/lib/blend-utils.js
@@ -10,7 +10,7 @@
 const _ = require('lodash');
 module.exports = {
     // 深度合并对象
-    deepExtend() {
+    deepExtend(obj1, obj2) {
         if (
             Object.prototype.toString.call(obj1) === '[object Object]' &&
             Object.prototype.toString.call(obj2) === '[object Object]'
