@@ -1,6 +1,6 @@
 {
     "name": "blend-react",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "description": "react核心构建配置",
     "keywords": [
         "react-config",
@@ -19,7 +19,7 @@
         "autoprefixer": "^9.8.6",
         "babel-loader": "^8.1.0",
         "blend-fs": "^1.0.3",
-        "blend-utils": "^0.0.2",
+        "blend-utils": "^0.0.3",
         "copy-webpack-plugin": "^6.0.3",
         "css-loader": "^4.2.1",
         "eslint-loader": "^4.0.2",
