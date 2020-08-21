@@ -1,6 +1,6 @@
 {
     "name": "blend-spawn",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "前端自动化开发常用子进程方法",
     "keywords": [
         "blend-spawn",
@@ -18,7 +18,7 @@
         "test": "__tests__"
     },
     "dependencies": {
-        "blend-spinner": "^0.0.3"
+        "blend-spinner": "^0.0.4"
     },
     "files": [
         "lib"
