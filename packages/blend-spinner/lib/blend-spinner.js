@@ -1,11 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 16:06:33
- * @LastEditTime: 2020-08-21 16:09:31
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-21 17:34:29
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/blend-spinner/lib/blend-spinner.js
  */
+const ora = require('ora');
+const spinners = require('cli-spinners');
 module.exports = (options = {}) =>
     ora(
         Object.assign(

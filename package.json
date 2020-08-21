@@ -5,6 +5,7 @@
         "packages/*"
     ],
     "scripts": {
+        "test-react": "node test/react/index",
         "commit": "git-cz"
     },
     "config": {
@@ -33,7 +34,10 @@
         "husky": "^4.2.5",
         "lerna": "^3.22.1",
         "lint-staged": "^10.2.11",
-        "standard": "^14.3.4"
+        "standard": "^14.3.4",
+        "blend-spawn": "file:./packages/blend-spawn",
+        "blend-spinner": "file:./packages/blend-spinner",
+        "blend-fs": "file:./packages/blend-fs"
     },
     "dependencies": {},
     "version": "0.0.1",
