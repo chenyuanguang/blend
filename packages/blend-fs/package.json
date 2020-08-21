@@ -1,6 +1,6 @@
 {
     "name": "blend-fs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "基于fs和fs-extra扩展文件的操作方法",
     "keywords": [
         "fs",
