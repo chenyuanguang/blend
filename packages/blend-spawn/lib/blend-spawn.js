@@ -1,12 +1,12 @@
 /*
  * @Author: your name
- * @Date: 2020-05-15 19:06:06
- * @LastEditTime: 2020-08-21 16:00:38
- * @LastEditors: Please set LastEditors
+ * @Date: 2020-08-21 16:03:55
+ * @LastEditTime: 2020-08-21 16:09:11
+ * @LastEditors: your name
  * @Description: In User Settings Edit
- * @FilePath: /health_web/scripts/libs/spawn.js
+ * @FilePath: /blend/packages/blend-spawn/lib/blend-spawn.js
  */
-const spinner = require('./spinner');
+const spinner = require('blend-spinner');
 
 const spawn = async (cmd, options = {}) => {
     const chunks = cmd.split(' ');

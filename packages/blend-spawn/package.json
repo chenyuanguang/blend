@@ -1,0 +1,36 @@
+{
+    "name": "blend-spawn",
+    "version": "0.0.1",
+    "description": "前端自动化开发常用子进程方法",
+    "keywords": [
+        "blend-spawn",
+        "spawn",
+        "blend",
+        "node子进程",
+        "cwd"
+    ],
+    "author": "chenyuanguang <chenyuanguang@cmcm.com>",
+    "homepage": "https://github.com/chenyuanguang/blend#readme",
+    "license": "ISC",
+    "main": "lib/blend-spawn.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "dependencies": {
+        "blend-spinner": "^0.0.1"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chenyuanguang/blend.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/chenyuanguang/blend/issues"
+    }
+}
