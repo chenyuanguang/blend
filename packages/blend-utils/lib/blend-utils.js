@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 23:45:46
- * @LastEditTime: 2020-08-22 00:09:10
+ * @LastEditTime: 2020-08-22 00:26:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /blend/packages/blend-utils/lib/blend-utils.js
@@ -15,7 +15,7 @@ module.exports = {
             Object.prototype.toString.call(obj1) === '[object Object]' &&
             Object.prototype.toString.call(obj2) === '[object Object]'
         ) {
-            for (prop2 in obj2) {
+            for (const prop2 in obj2) {
                 //obj1无值,都有取obj2
                 if (!obj1[prop2]) {
                     obj1[prop2] = obj2[prop2];
