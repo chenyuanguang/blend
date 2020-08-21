@@ -6,7 +6,7 @@
     "scripts": {
         "blends": "blend-react-start",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dev-server --config config/webpack.dev.js",
+        "start": "blend-react-start",
         "build": "webpack --config config/webpack.build.js",
         "tsc": "npx tsc --watch",
         "commit": "git-cz",

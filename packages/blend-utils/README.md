@@ -1,11 +1,11 @@
-# `blend`
+# `blend-utils`
 
 > TODO: description
 
 ## Usage
 
 ```
-const blend = require('blend');
+const blendUtils = require('blend-utils');
 
 // TODO: DEMONSTRATE API
 ```

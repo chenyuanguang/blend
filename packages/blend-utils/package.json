@@ -1,0 +1,34 @@
+{
+  "name": "blend-utils",
+  "version": "0.0.1",
+  "description": "js相应工具函数库",
+  "keywords": [
+    "blend",
+    "blend-utils",
+    "utils"
+  ],
+  "author": "chenyuanguang <chenyuanguang@cmcm.com>",
+  "homepage": "https://github.com/chenyuanguang/blend#readme",
+  "license": "ISC",
+  "main": "lib/blend-utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyuanguang/blend.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/chenyuanguang/blend/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
