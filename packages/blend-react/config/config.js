@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-10 18:55:14
- * @LastEditTime: 2020-08-20 18:24:53
+ * @LastEditTime: 2020-08-21 15:24:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /react-router-redux-auto/config/config.js

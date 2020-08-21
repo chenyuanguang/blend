@@ -1,0 +1,35 @@
+{
+    "name": "blend-fs",
+    "version": "1.0.0",
+    "description": "基于fs和fs-extra扩展文件的操作方法",
+    "keywords": [
+        "fs",
+        "fs-extra",
+        "blend-fs",
+        "blend"
+    ],
+    "dependencies": {
+        "fs-extra": "^9.0.1"
+    },
+    "author": "chenyuanguang <chenyuanguang@cmcm.com>",
+    "homepage": "https://github.com/chenyuanguang/blend#readme",
+    "license": "ISC",
+    "main": "lib/blend-fs.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chenyuanguang/blend.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/chenyuanguang/blend/issues"
+    }
+}

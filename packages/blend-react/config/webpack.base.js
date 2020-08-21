@@ -15,6 +15,7 @@ const config = require('./config');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const deviceHtml = require('./device');
+
 // deviceHtml();
 
 const eslintTest = [
