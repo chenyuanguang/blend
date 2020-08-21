@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint", //eslint校验
+        "esbenp.prettier-vscode", //prettier格式化
+        "michelemelluso.code-beautifier", //css等相关样式文件提示
+        "dsznajder.es7-react-js-snippets",
+        "infeng.vscode-react-typescript"
+    ]
+}

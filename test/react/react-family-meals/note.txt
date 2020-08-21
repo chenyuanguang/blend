@@ -1,0 +1,110 @@
+
+## overrides
+覆盖一组文件的配置文件中的规则.
+```
+"overrides": [
+    {
+      "files": ["*-test.js","*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+```
+## parserOptions
+指定想要支持的 JavaScript 语言选项，选项有:
+
+- ecmaVersion
+默认设置为3，5， 可以使用 6、7、8 或 9 来指定你想要使用的 ECMAScript 版本。也可以用使用年份命名的版本号指定为 2015（同 6），2016（同 7），或 2017（同 8）或 2018（同 9）。
+- sourceType
+默认设置为 "script" , 如果你的代码是 ECMAScript 模块，可设置为"module"。
+- ecmaFeatures 用来表示你想使用的额外的语言特性:
+    3.1) globalReturn 允许在全局作用域下使用 return 语句
+    3.2) impliedStrict 启用全局 strict mode
+    3.3) jsx 启用 JSX
+    3.4) experimentalObjectRestSpread 启用实验性的 object rest/spread properties 支持
+```
+ "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+```
+## rules
+Rules 的配置规则是一个可以包含三个参数的数组。
+
+- 第一个参数为错误级别
+    1.1) "off" 或 0 - 关闭规则
+    1.2) "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
+    1.3) "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
+- 第二个参数为规则的选项，在例子中分别配置了 indent 为默认4个空格、2个空格、tab缩进。
+- 第三个参数为额外参数
+`
+"indent": [2, 2, {"SwitchCase": 2}]
+// 错误等级为 2, 缩进为2个空格, 另外补充，switch...case结构的case也必须缩进。
+`
+- 完整示例
+
+```json
+  "eslintConfig": {
+    "extends": [
+      "@enos/eslint-config-env" //从已有配置中继承启动的规则。
+    ],
+    "overrides": [ //覆盖指定文件的规则
+      {
+        "files": [
+          "*.ts",
+          "*.tsx"
+        ],
+         "plugins": [ //使用的插件，是个npm包
+          "@typescript-eslint"
+        ],
+        "extends": [
+          "plugin:@typescript-eslint/recommended"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": { //指定语言的规则
+          "project": "./tsconfig.json",
+          "ecmaFeatures": {
+            "jsx": true
+          }
+        },
+        "rules": {
+          "@typescript-eslint/no-explicit-any": [
+            0
+          ]
+        }
+      }
+    ],
+    "rules": {
+      "linebreak-style": 0,
+      "global-require": 0,
+      "react/jsx-one-expression-per-line": "off",
+      "max-len": [
+        "error",
+        {
+          "code": 150,
+          "ignoreStrings": true
+        }
+      ],
+      "eslint linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".tsx",
+            ".ts"
+          ]
+        }
+      ]
+    }
+  }
+```

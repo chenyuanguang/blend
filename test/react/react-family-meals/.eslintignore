@@ -1,0 +1,7 @@
+/dist/**/*
+/logs/**/*
+/node_modules/**/*
+/src/assets/**/*
+/scripts/**/*
+\.eslintrc.js
+/config/**/*
