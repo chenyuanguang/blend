@@ -13,8 +13,7 @@ const webpack = require('webpack');
 const { bfs, efs, fs } = require('blend-fs');
 const config = require('./config');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-
-const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin'); // 顾名思义，把资源加到 html 里，那这个插件把 dll 加入到 index.html 里
+const AutoDllPlugin = require('autodll-webpack-plugin'); // 第 1 步：引入 DLL 自动链接库插件
 const deviceHtml = require('./device');
 const AutoDllPlugin = require('autodll-webpack-plugin');
 
@@ -31,7 +30,6 @@ const eslintTest = [
         exclude: [path.resolve(process.cwd(), './node_modules')],
     },
 ];
-
 
 module.exports = {
     entry: config.base.entry,
@@ -79,10 +77,14 @@ module.exports = {
         alias: config.base.aliases,
     },
     plugins: [
-        new webpack.DllReferencePlugin({
-            // 注意: DllReferencePlugin 的 context 必须和 package.json 的同级目录，要不然会链接失败
-            context: path.resolve(process.cwd()),
-            manifest: path.resolve(process.cwd(), './dist/react.manifest.json'),
+        // 第 2 步：配置要打包为 dll 的文件
+        new AutoDllPlugin({
+            inject: true, // 设为 true 就把 DLL bundles 插到 index.html 里
+            filename: '[name].dll.js',
+            context: path.resolve(process.cwd(), '../'), // AutoDllPlugin 的 context 必须和 package.json 的同级目录，要不然会链接失败
+            entry: {
+                react: ['react', 'react-dom'],
+            },
         }),
 
         new htmlWebpackPlugin({
@@ -90,9 +92,7 @@ module.exports = {
             template: config.base.templatePath,
             minify: config.base.htmlMinify,
         }),
-        new AddAssetHtmlPlugin({
-            filepath: path.resolve(process.cwd(), './dist/_dll_react.js');,
-        }),
+
         new CopyWebpackPlugin({
             patterns: [
                 {
