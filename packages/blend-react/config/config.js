@@ -17,7 +17,7 @@ module.exports = deepExtend(
             outputPath: path.join(process.cwd(), './dist'),
             outputFileName: '[id]-[name]-[hash].js',
             templatePath: './src/index.html',
-            publicPath: 'http://localhost:8099/',
+            publicPath: '/',
             htmlMinify: {
                 removeComments: true, //去除注释
                 collapseWhitespace: true, //去除空格
