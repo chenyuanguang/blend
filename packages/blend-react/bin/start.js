@@ -2,11 +2,7 @@
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 
-const dllBuild = require('./dll.js');
-
 async function startDevServer() {
-    await dllBuild();
-
     const config = require('../config/webpack.dev.js');
     const { devServer } = config;
     const compiler = webpack(config);
