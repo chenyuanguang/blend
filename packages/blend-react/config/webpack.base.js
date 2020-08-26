@@ -13,9 +13,9 @@ const webpack = require('webpack');
 const { bfs, efs, fs } = require('blend-fs');
 const config = require('./config');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-const AutoDllPlugin = require('autodll-webpack-plugin'); // 第 1 步：引入 DLL 自动链接库插件
+// const AutoDllPlugin = require('autodll-webpack-plugin'); // 第 1 步：引入 DLL 自动链接库插件
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const deviceHtml = require('./device');
-const AutoDllPlugin = require('autodll-webpack-plugin');
 
 if (!bfs.isExist(path.resolve(process.cwd(), './src/index.html'))) {
     deviceHtml();
@@ -77,15 +77,16 @@ module.exports = {
         alias: config.base.aliases,
     },
     plugins: [
-        // 第 2 步：配置要打包为 dll 的文件
-        new AutoDllPlugin({
-            inject: true, // 设为 true 就把 DLL bundles 插到 index.html 里
-            filename: '[name].dll.js',
-            context: path.resolve(process.cwd(), '../'), // AutoDllPlugin 的 context 必须和 package.json 的同级目录，要不然会链接失败
-            entry: {
-                react: ['react', 'react-dom'],
-            },
-        }),
+        // // 第 2 步：配置要打包为 dll 的文件
+        // new AutoDllPlugin({
+        //     inject: true, // 设为 true 就把 DLL bundles 插到 index.html 里
+        //     filename: '[name].dll.js',
+        //     context: path.resolve(process.cwd(), '../'), // AutoDllPlugin 的 context 必须和 package.json 的同级目录，要不然会链接失败
+        //     entry: {
+        //         react: ['react', 'react-dom'],
+        //     },
+        // }),
+        new HardSourceWebpackPlugin(), //代替dll文件的插件（webpack5推荐使用）
 
         new htmlWebpackPlugin({
             filename: 'index.html',
