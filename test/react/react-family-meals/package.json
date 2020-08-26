@@ -4,10 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "blends": "blend-react-start",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "blend-react-start",
-        "build": "webpack --config config/webpack.build.js",
+        "build": "blend-react-build",
         "tsc": "npx tsc --watch",
         "commit": "git-cz",
         "log": "standard-version"
@@ -32,7 +31,7 @@
             "prettier --write"
         ]
     },
-    "author": "",
+    "author": "chenyuanguan",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.11.1",
@@ -58,7 +57,6 @@
         "axios": "^0.19.2",
         "babel-plugin-import": "^1.13.0",
         "blend-prettier-config": "file:../../../packages/blend-prettier-config",
-        "blend-react": "file:../../../packages/blend-react",
         "classnames": "^2.2.6",
         "eslint-config-blend-react": "file:../../../packages/eslint-config-blend-react",
         "typescript": "^3.9.7"

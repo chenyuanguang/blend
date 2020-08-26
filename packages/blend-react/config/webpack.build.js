@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var config = require('./config');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const baseWebpack = require('./webpack.base.js');
 
 module.exports = merge(baseWebpack, {
@@ -41,9 +41,9 @@ module.exports = merge(baseWebpack, {
         new UglifyJsPlugin({
             uglifyOptions: {
                 include: /\/src/,
-                compress: {
-                    warnings: false,
-                },
+                // compress: {
+                //     warnings: false,
+                // },
                 sourceMap: config.build.uglifyJsSourceMap,
                 parallel: true, //使用多进程并行运行和文件缓存来提高构建速度
             },

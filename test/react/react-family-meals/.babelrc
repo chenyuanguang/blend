@@ -10,7 +10,7 @@
             "import",
             {
                 "libraryName": "antd-mobile",
-                "style": true
+                "style": true 
             }
         ]
     ]

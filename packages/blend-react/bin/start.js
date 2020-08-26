@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
-const config = require('../config/webpack.dev.js');
-const { devServer } = config;
+
+const dllBuild = require('./dll.js');
 
 async function startDevServer() {
-    const compiler = webpack(config);
+    await dllBuild();
 
+    const config = require('../config/webpack.dev.js');
+    const { devServer } = config;
+    const compiler = webpack(config);
     const server = await new WebpackDevServer(compiler, devServer);
     server.use(require('webpack-hot-middleware')(compiler));
 

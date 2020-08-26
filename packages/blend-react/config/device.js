@@ -1,7 +1,7 @@
 /*
  * @Author: chenyuanguang
  * @Date: 2020-08-10 18:55:14
- * @LastEditTime: 2020-08-20 18:25:50
+ * @LastEditTime: 2020-08-22 00:45:53
  * @LastEditors: Please set LastEditors
  * @Description: chenyuanguang
  * @FilePath: /react-router-redux-auto/config/device.js
@@ -9,6 +9,7 @@
 let config = require('./config');
 let fs = require('fs');
 const path = require('path');
+
 let deviceHtml = {
     mobile() {
         let str = `<!DOCTYPE html>
