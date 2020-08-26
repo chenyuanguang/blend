@@ -1,0 +1,80 @@
+.index {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.desc {
+    color: #957d7d;
+    font-size: 30px;
+}
+
+.section {
+    padding: 20px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    /* min-width: 300px; */
+    width: 700px;
+    align-items: baseline;
+    box-sizing: border-box;
+    max-height: 105px;
+    /* height: 105px; */
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.section:hover {
+    max-height: 2000px;
+    /* height: auto; */
+}
+
+.section > h4 {
+    margin-right: 20px;
+    width: fit-content;
+}
+
+.section > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.section > ul > li {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 3px 10px;
+    background: yellowgreen;
+    border-radius: 20px;
+    color: white;
+}
+
+.packages > ul > li {
+    background: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+}
+
+.packages > ul > li > span {
+    background: #5d5d5d;
+    padding: 3px 5px;
+}
+
+.packages > ul > li > i {
+    background: #1082c2;
+    padding: 3px 6px;
+}
+
+.packages_dev > ul > li > i {
+    background: #4dc820;
+}

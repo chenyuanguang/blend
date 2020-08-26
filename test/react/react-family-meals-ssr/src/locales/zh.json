@@ -1,0 +1,11 @@
+{
+    "title": "React 全家桶",
+    "intro": ["React 全家桶", "集成多种工具"],
+    "pages": {
+        "home": {
+            "title": "欢迎",
+            "description": "基于blend-cli脚手架生成React的全家桶项目",
+            "start": "快速上手"
+        }
+    }
+}

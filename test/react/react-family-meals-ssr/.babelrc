@@ -5,12 +5,13 @@
         "@babel/preset-typescript" // 让babel支持ts（使用babel代替ts-loader）
     ],
     "plugins": [
+        "@babel/plugin-transform-runtime",
         "transform-react-jsx",
         [
             "import",
             {
                 "libraryName": "antd-mobile",
-                "style": true 
+                "style": true
             }
         ]
     ]

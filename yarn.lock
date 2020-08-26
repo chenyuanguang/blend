@@ -2085,10 +2085,26 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
+"blend-fs@file:./packages/blend-fs":
+  version "1.0.3"
+  dependencies:
+    fs-extra "^9.0.1"
+
 blend-react@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/blend-react/-/blend-react-1.0.0.tgz#0d0974d44b35647c4c25c2a7207e7497c2913289"
   integrity sha512-1rCgdVti6aiZn+hKBAcMciP+SRwLOs/d/4fpUdxOGVw5gJuauhjncLS1mYJNGpaJMXvbdQzFvhlyGf5kLBOs4w==
+
+"blend-spawn@file:./packages/blend-spawn":
+  version "0.0.4"
+  dependencies:
+    blend-spinner "^0.0.4"
+
+"blend-spinner@file:./packages/blend-spinner":
+  version "0.0.4"
+  dependencies:
+    cli-spinners "^2.4.0"
+    ora "^5.0.0"
 
 "blend-utils@file:packages/blend-utils":
   version "0.0.4"
