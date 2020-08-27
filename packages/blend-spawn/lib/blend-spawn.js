@@ -22,6 +22,21 @@ const spawn = async (cmd, options = {}) => {
         child.on('error', (...args) => {
             reject(...args);
         });
+
+        //主进程关闭退出子进程
+        process.on('close', (code) => {
+            console.log('main process  close', code);
+            child && child.kill();
+        });
+        //主进程关闭退出子进程
+        process.on('exit', (code) => {
+            console.log('main process  exit', code);
+            child && child.kill();
+        });
+        //非正常退出情况
+        process.on('SIGINT', function () {
+            child && child.kill();
+        });
     }).catch((e) => {
         spinner(cmd).fail();
         console.error(e);

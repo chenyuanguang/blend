@@ -36,8 +36,8 @@ module.exports = {
     output: {
         publicPath: config.base.publicPath, //打包后的文件再引用时，自动注入绝对路径
         path: config.base.outputPath,
-        filename: 'js/' + config.base.outputFileName,
-        chunkFilename: '[id]-[name]-[hash].js', //组件懒加载时的文件名字，以及存储
+        filename: 'public/js/' + config.base.outputFileName,
+        chunkFilename: 'public/js/[id]-[name]-[hash].js', //组件懒加载时的文件名字，以及存储
     },
     module: {
         rules: [
@@ -67,7 +67,7 @@ module.exports = {
             {
                 test: /\.json$/,
                 use: ['json-loader'],
-                // type: 'javascript/auto',
+                type: 'javascript/auto',
                 exclude: /node_modules/,
             },
         ],
@@ -98,7 +98,7 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(process.cwd(), './src/static'),
-                    to: config.base.outputPath + '/static',
+                    to: config.base.outputPath + '/public/static',
                     globOptions: {
                         ignore: ['.*'],
                     },
@@ -108,7 +108,7 @@ module.exports = {
         // 提取css
 
         new miniCssExtractPlugin({
-            filename: 'css/[name].[contenthash].css',
+            filename: 'public/css/[name].[contenthash].css',
         }),
         // 忽略d.ts文件
         new webpack.WatchIgnorePlugin([/css\.d\.ts$/]),

@@ -12,22 +12,25 @@ const serverConfig = {
         path: path.resolve(process.cwd(), './dist/server'),
     },
     externals: [nodeExternals()],
+    node: {
+        process: true, // boolean
+    },
     module: {
         rules: [
-            {
-                test: /\.css?$/,
-                use: [
-                    'isomorphic-style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            importLoaders: 1,
-                            modules: true,
-                            localIdentName: '[name]_[local]_[hash:base64:5]',
-                        },
-                    },
-                ],
-            },
+            // {
+            //     test: /\.css?$/,
+            //     use: [
+            //         'isomorphic-style-loader',
+            //         {
+            //             loader: 'css-loader',
+            //             options: {
+            //                 importLoaders: 1,
+            //                 modules: true,
+            //                 localIdentName: '[name]_[local]_[hash:base64:5]',
+            //             },
+            //         },
+            //     ],
+            // },
             {
                 test: /\.(png|jpeg|jpg|gif|svg)?$/,
                 loader: 'url-loader',

@@ -1,0 +1,467 @@
+
+ svr code done
+Stats {
+  compilation: Compilation {
+    _pluginCompat: SyncBailHook {
+      _args: [Array],
+      taps: [Array],
+      interceptors: [],
+      call: [Function: lazyCompileHook],
+      promise: [Function: lazyCompileHook],
+      callAsync: [Function: lazyCompileHook],
+      _x: undefined
+    },
+    hooks: {
+      buildModule: [SyncHook],
+      rebuildModule: [SyncHook],
+      failedModule: [SyncHook],
+      succeedModule: [SyncHook],
+      addEntry: [SyncHook],
+      failedEntry: [SyncHook],
+      succeedEntry: [SyncHook],
+      dependencyReference: [SyncWaterfallHook],
+      finishModules: [AsyncSeriesHook],
+      finishRebuildingModule: [SyncHook],
+      unseal: [SyncHook],
+      seal: [SyncHook],
+      beforeChunks: [SyncHook],
+      afterChunks: [SyncHook],
+      optimizeDependenciesBasic: [SyncBailHook],
+      optimizeDependencies: [SyncBailHook],
+      optimizeDependenciesAdvanced: [SyncBailHook],
+      afterOptimizeDependencies: [SyncHook],
+      optimize: [SyncHook],
+      optimizeModulesBasic: [SyncBailHook],
+      optimizeModules: [SyncBailHook],
+      optimizeModulesAdvanced: [SyncBailHook],
+      afterOptimizeModules: [SyncHook],
+      optimizeChunksBasic: [SyncBailHook],
+      optimizeChunks: [SyncBailHook],
+      optimizeChunksAdvanced: [SyncBailHook],
+      afterOptimizeChunks: [SyncHook],
+      optimizeTree: [AsyncSeriesHook],
+      afterOptimizeTree: [SyncHook],
+      optimizeChunkModulesBasic: [SyncBailHook],
+      optimizeChunkModules: [SyncBailHook],
+      optimizeChunkModulesAdvanced: [SyncBailHook],
+      afterOptimizeChunkModules: [SyncHook],
+      shouldRecord: [SyncBailHook],
+      reviveModules: [SyncHook],
+      optimizeModuleOrder: [SyncHook],
+      advancedOptimizeModuleOrder: [SyncHook],
+      beforeModuleIds: [SyncHook],
+      moduleIds: [SyncHook],
+      optimizeModuleIds: [SyncHook],
+      afterOptimizeModuleIds: [SyncHook],
+      reviveChunks: [SyncHook],
+      optimizeChunkOrder: [SyncHook],
+      beforeChunkIds: [SyncHook],
+      optimizeChunkIds: [SyncHook],
+      afterOptimizeChunkIds: [SyncHook],
+      recordModules: [SyncHook],
+      recordChunks: [SyncHook],
+      beforeHash: [SyncHook],
+      contentHash: [SyncHook],
+      afterHash: [SyncHook],
+      recordHash: [SyncHook],
+      record: [SyncHook],
+      beforeModuleAssets: [SyncHook],
+      shouldGenerateChunkAssets: [SyncBailHook],
+      beforeChunkAssets: [SyncHook],
+      additionalChunkAssets: [SyncHook],
+      additionalAssets: [AsyncSeriesHook],
+      optimizeChunkAssets: [AsyncSeriesHook],
+      afterOptimizeChunkAssets: [SyncHook],
+      optimizeAssets: [AsyncSeriesHook],
+      afterOptimizeAssets: [SyncHook],
+      needAdditionalSeal: [SyncBailHook],
+      afterSeal: [AsyncSeriesHook],
+      chunkHash: [SyncHook],
+      moduleAsset: [SyncHook],
+      chunkAsset: [SyncHook],
+      assetPath: [SyncWaterfallHook],
+      needAdditionalPass: [SyncBailHook],
+      childCompiler: [SyncHook],
+      log: [SyncBailHook],
+      normalModuleLoader: [SyncHook],
+      optimizeExtractedChunksBasic: [SyncBailHook],
+      optimizeExtractedChunks: [SyncBailHook],
+      optimizeExtractedChunksAdvanced: [SyncBailHook],
+      afterOptimizeExtractedChunks: [SyncHook],
+      htmlWebpackPluginAlterChunks: [SyncWaterfallHook],
+      htmlWebpackPluginBeforeHtmlGeneration: [AsyncSeriesWaterfallHook],
+      htmlWebpackPluginBeforeHtmlProcessing: [AsyncSeriesWaterfallHook],
+      htmlWebpackPluginAlterAssetTags: [AsyncSeriesWaterfallHook],
+      htmlWebpackPluginAfterHtmlProcessing: [AsyncSeriesWaterfallHook],
+      htmlWebpackPluginAfterEmit: [AsyncSeriesWaterfallHook]
+    },
+    name: undefined,
+    compiler: Compiler {
+      _pluginCompat: [SyncBailHook],
+      hooks: [Object],
+      name: undefined,
+      parentCompilation: undefined,
+      outputPath: '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/dist/server',
+      outputFileSystem: [NodeOutputFileSystem],
+      inputFileSystem: [CachedInputFileSystem],
+      recordsInputPath: undefined,
+      recordsOutputPath: undefined,
+      records: [Object],
+      removedFiles: Set {},
+      fileTimestamps: Map {},
+      contextTimestamps: [Map],
+      resolverFactory: [ResolverFactory],
+      infrastructureLogger: [Function: logger],
+      resolvers: [Object],
+      options: [Object],
+      context: '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr',
+      requestShortener: [RequestShortener],
+      running: true,
+      watchMode: true,
+      _assetEmittingSourceCache: [WeakMap],
+      _assetEmittingWrittenFiles: Map {},
+      watchFileSystem: [IgnoringWatchFileSystem],
+      '/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/hard-source-logger-factory-compiler-key': [Logger],
+      __hardSource_configHash: 'b397e8fedac91387d5bccbe58e7ff48d3ca73e403fdd746dee9f99a51a872e79',
+      __hardSource_shortConfigHash: 'b397e8fe',
+      __hardSource_missingVerify: [Promise],
+      dependencies: undefined,
+      __hardSource_missingCache: [Object],
+      __hardSource_fileTimestamps: [Object],
+      _lastCompilationFileDependencies: [SortableSet [Set]],
+      _lastCompilationContextDependencies: [SortableSet [Set]]
+    },
+    resolverFactory: ResolverFactory {
+      _pluginCompat: [SyncBailHook],
+      hooks: [Object],
+      cache2: [Map]
+    },
+    inputFileSystem: CachedInputFileSystem {
+      fileSystem: NodeJsInputFileSystem {},
+      _statStorage: [Storage],
+      _readdirStorage: [Storage],
+      _readFileStorage: [Storage],
+      _readJsonStorage: [Storage],
+      _readlinkStorage: [Storage],
+      _stat: [Function: bound bound ],
+      _statSync: [Function: bound bound ],
+      _readdir: [Function: bound readdir],
+      _readdirSync: [Function: bound readdirSync],
+      _readFile: [Function: bound bound readFile],
+      _readFileSync: [Function: bound bound readFileSync],
+      _readJson: [Function],
+      _readJsonSync: [Function],
+      _readlink: [Function: bound bound readlink],
+      _readlinkSync: [Function: bound bound readlinkSync]
+    },
+    requestShortener: RequestShortener {
+      currentDirectoryRegExp: /(^|!)\/Users\/dream\/Desktop\/git_manager\/blend\/test\/react\/react\-family\-meals\-ssr/g,
+      parentDirectoryRegExp: /(^|!)\/Users\/dream\/Desktop\/git_manager\/blend\/test\/react\//g,
+      buildinsAsModule: false,
+      buildinsRegExp: /(^|!)\/Users\/dream\/Desktop\/git_manager\/blend\/packages\/blend\-react\/node_modules\/webpack/g,
+      cache: [Map]
+    },
+    options: {
+      entry: '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js',
+      output: [Object],
+      module: [Object],
+      resolve: [Object],
+      plugins: [Array],
+      target: 'node',
+      mode: 'development',
+      externals: [Array],
+      devtool: 'eval',
+      cache: true,
+      context: '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr',
+      node: [Object],
+      performance: false,
+      optimization: [Object],
+      resolveLoader: [Object],
+      infrastructureLogging: [Object]
+    },
+    outputOptions: {
+      publicPath: '',
+      path: '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/dist/server',
+      filename: 'index.js',
+      chunkFilename: 'public/js/[id]-[name]-[hash].js',
+      webassemblyModuleFilename: '[modulehash].module.wasm',
+      library: '',
+      hotUpdateFunction: 'webpackHotUpdate',
+      jsonpFunction: 'webpackJsonp',
+      chunkCallbackName: 'webpackChunk',
+      globalObject: 'global',
+      devtoolNamespace: '',
+      libraryTarget: 'var',
+      pathinfo: true,
+      sourceMapFilename: '[file].map[query]',
+      hotUpdateChunkFilename: '[id].[hash].hot-update.js',
+      hotUpdateMainFilename: '[hash].hot-update.json',
+      crossOriginLoading: false,
+      jsonpScriptType: false,
+      chunkLoadTimeout: 120000,
+      hashFunction: 'md4',
+      hashDigest: 'hex',
+      hashDigestLength: 20,
+      devtoolLineToLine: false,
+      strictModuleExceptionHandling: false
+    },
+    bail: undefined,
+    profile: undefined,
+    performance: false,
+    mainTemplate: MainTemplate {
+      _pluginCompat: [SyncBailHook],
+      outputOptions: [Object],
+      hooks: [Object],
+      requireFn: '__webpack_require__'
+    },
+    chunkTemplate: ChunkTemplate {
+      _pluginCompat: [SyncBailHook],
+      outputOptions: [Object],
+      hooks: [Object]
+    },
+    hotUpdateChunkTemplate: HotUpdateChunkTemplate {
+      _pluginCompat: [SyncBailHook],
+      outputOptions: [Object],
+      hooks: [Object]
+    },
+    runtimeTemplate: RuntimeTemplate {
+      outputOptions: [Object],
+      requestShortener: [RequestShortener]
+    },
+    moduleTemplates: { javascript: [ModuleTemplate], webassembly: [ModuleTemplate] },
+    semaphore: Semaphore {
+      available: 100,
+      waiters: [],
+      _continue: [Function: bound _continue]
+    },
+    entries: [ [NormalModule] ],
+    _preparedEntrypoints: [ [Object] ],
+    entrypoints: Map { 'main' => [Entrypoint] },
+    chunks: [ [Chunk] ],
+    chunkGroups: [ [Entrypoint] ],
+    namedChunkGroups: Map { 'main' => [Entrypoint] },
+    namedChunks: Map { 'main' => [Chunk] },
+    modules: [ [NormalModule], [ExternalModule], [ExternalModule] ],
+    _modules: Map {
+      '/Users/dream/Desktop/git_manager/blend/node_modules/babel-loader/lib/index.js!/Users/dream/Desktop/git_manager/blend/node_modules/eslint-loader/dist/cjs.js!/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js' => [NormalModule],
+      'external "koa"' => [ExternalModule],
+      'external "react-router-config"' => [ExternalModule]
+    },
+    cache: {
+      children: [Object],
+      'm/Users/dream/Desktop/git_manager/blend/node_modules/babel-loader/lib/index.js!/Users/dream/Desktop/git_manager/blend/node_modules/eslint-loader/dist/cjs.js!/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js': [NormalModule],
+      'mexternal "koa"': [ExternalModule],
+      'mexternal "react-router-config"': [ExternalModule],
+      chunkmain: [Object],
+      relativePaths: [Map]
+    },
+    records: {
+      'html-webpack-plugin for "index.html"': [Array],
+      modules: [Object],
+      chunks: [Object]
+    },
+    additionalChunkAssets: [],
+    assets: {
+      'index.js': [CachedSource],
+      '../public/static/css/reset.css': [RawSource],
+      'index.html': [Object]
+    },
+    assetsInfo: Map {
+      'index.html' => {},
+      'index.js' => {},
+      '../public/static/css/reset.css' => {}
+    },
+    errors: [],
+    warnings: [
+      ModuleWarning: Module Warning: Module Warning (from /Users/dream/Desktop/git_manager/blend/node_modules/eslint-loader/dist/cjs.js):
+      [0m[0m
+      [0m[4m/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js[24m[0m
+      [0m  [2m30:51[22m  [33mwarning[39m  'reject' is defined but never used           [2mno-unused-vars[22m[0m
+      [0m  [2m52:7[22m   [33mwarning[39m  'server' is assigned a value but never used  [2mno-unused-vars[22m[0m
+      [0m[0m
+      [0m[33m[1m✖ 2 problems (0 errors, 2 warnings)[22m[39m[0m
+      [0m[33m[1m[22m[39m[0m
+          at thawError (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/TransformModuleErrorsPlugin.js:65:15)
+          at /Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/TransformModuleErrorsPlugin.js:104:9
+          at SyncWaterfallHook.eval [as call] (eval at create (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+          at SyncWaterfallHook.lazyCompileHook (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/tapable/lib/Hook.js:154:20)
+          at Object.exports.call (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/util/plugin-compat.js:171:17)
+          at thaw (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/SystemArchetype.js:126:29)
+          at /Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/SystemArchetype.js:145:36
+          at Array.map (<anonymous>)
+          at mapMap (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/SystemArchetype.js:145:24)
+          at mapThaw (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/SystemArchetype.js:151:9)
+          at Object.thaw (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/util/serial.js:58:46)
+          at Object.thaw (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/util/serial.js:140:31)
+          at Object.thaw (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/util/serial.js:216:25)
+          at /Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/TransformNormalModulePlugin.js:654:30
+          at SyncWaterfallHook.eval [as call] (eval at create (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+          at Object.exports.call (/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/util/plugin-compat.js:171:17)
+    ],
+    children: [ [Compilation] ],
+    logging: Map {
+      'webpack.buildChunkGraph.visitModules' => [Array],
+      'copy-webpack-plugin' => [Array]
+    },
+    dependencyFactories: Map {
+      [Function: CssDependency] => CssModuleFactory {},
+      [Function: WebAssemblyImportDependency] => [NormalModuleFactory],
+      [Function: WebAssemblyExportImportedDependency] => [NormalModuleFactory],
+      [Function: SingleEntryDependency] => [NormalModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function] => [NormalModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function] => [NormalModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => [NormalModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => [NormalModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => [ContextModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function] => [NormalModuleFactory],
+      [Function] => [ContextModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => [ContextModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => NullFactory {},
+      [Function: LoaderDependency] => [NormalModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => NullFactory {},
+      [Function] => [ContextModuleFactory],
+      [Function: ContextElementDependency] => [NormalModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => [NormalModuleFactory],
+      [Function] => [ContextModuleFactory]
+    },
+    dependencyTemplates: Map {
+      'hash' => '',
+      [Function: CssDependency] => CssDependencyTemplate {},
+      [Function] => ConstDependencyTemplate {},
+      [Function] => HarmonyExportDependencyTemplate {},
+      [Function] => HarmonyInitDependencyTemplate {},
+      [Function] => HarmonyImportSideEffectDependencyTemplate {},
+      [Function] => HarmonyImportSpecifierDependencyTemplate {},
+      [Function] => HarmonyExportDependencyTemplate {},
+      [Function] => HarmonyExportDependencyTemplate {},
+      [Function] => HarmonyExportSpecifierDependencyTemplate {},
+      [Function] => HarmonyExportImportedSpecifierDependencyTemplate {},
+      [Function] => HarmonyAcceptDependencyTemplate {},
+      [Function] => HarmonyAcceptImportDependencyTemplate {},
+      [Function] => AMDRequireDependencyTemplate {},
+      [Function] => ModuleDependencyTemplateAsRequireId {},
+      [Function] => AMDRequireArrayDependencyTemplate {},
+      [Function] => ContextDependencyTemplateAsRequireCall {},
+      [Function] => AMDDefineDependencyTemplate {},
+      [Function] => UnsupportedDependencyTemplate {},
+      [Function] => LocalModuleDependencyTemplate {},
+      [Function] => ModuleDependencyTemplateAsId {},
+      [Function] => ContextDependencyTemplateAsRequireCall {},
+      [Function] => ModuleDependencyTemplateAsId {},
+      [Function] => ContextDependencyTemplateAsId {},
+      [Function] => RequireResolveHeaderDependencyTemplate {},
+      [Function] => RequireHeaderDependencyTemplate {},
+      [Function] => RequireIncludeDependencyTemplate {},
+      [Function] => NullDependencyTemplate {},
+      [Function] => RequireEnsureDependencyTemplate {},
+      [Function] => ModuleDependencyTemplateAsRequireId {},
+      [Function] => ImportDependencyTemplate {},
+      [Function] => ImportEagerDependencyTemplate {},
+      [Function] => ImportDependencyTemplate {},
+      [Function] => ContextDependencyTemplateAsRequireCall {}
+    },
+    childrenCounters: { 'html-webpack-plugin for "index.html"': 1 },
+    usedChunkIds: null,
+    usedModuleIds: null,
+    fileTimestamps: Map {},
+    contextTimestamps: Map {
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/static': 1598494834330
+    },
+    compilationDependencies: Set {},
+    _buildingModules: Map {},
+    _rebuildingModules: Map {},
+    emittedAssets: Set {},
+    __hardSourceMethods: {
+      freeze: [Function: freeze],
+      thaw: [Function: thaw],
+      mapFreeze: [Function: mapFreeze],
+      mapThaw: [Function: mapThaw],
+      store: [Function: store],
+      fetch: [Function: fetch]
+    },
+    __hardSourceModuleCache: {
+      'p8Mgjoj/HFn+YFX8Y3njQQ==/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/html-webpack-plugin/lib/loader.js!/Users/dream/Desktop/git_manager/blend/node_modules/html-loader/dist/cjs.js!/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html': [Object],
+      '1B2M2Y8AsgTpgAmY7PhCfg==/Users/dream/Desktop/git_manager/blend/node_modules/babel-loader/lib/index.js!/Users/dream/Desktop/git_manager/blend/node_modules/eslint-loader/dist/cjs.js!/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js': [Object]
+    },
+    __hardSourceFileMd5s: {
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/static': '004ca7ea0ec481cf216651c7dc9ff4e8',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js': 'd45c94b6298eac3cb1f6a4f317e805a1',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html': '7f88038549dbe51196402ad91a72f2a6',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/.babelrc': 'ad0e8f93eadfdfe91a6885f975e6cddc'
+    },
+    __hardSourceCachedMd5s: {
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html': '7f88038549dbe51196402ad91a72f2a6',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js': 'd45c94b6298eac3cb1f6a4f317e805a1',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/.babelrc': 'ad0e8f93eadfdfe91a6885f975e6cddc',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/static': '004ca7ea0ec481cf216651c7dc9ff4e8'
+    },
+    __hardSourceFileTimestamps: {
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html': 1598499110000,
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js': 1598494916166,
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/.babelrc': 1598494834310
+    },
+    __hardSourceModuleResolveCache: {
+      '["p8Mgjoj/HFn+YFX8Y3njQQ==","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr","../../../packages/blend-react/node_modules/html-webpack-plugin/lib/loader.js!src/index.html"]': [Object],
+      '["1B2M2Y8AsgTpgAmY7PhCfg==","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr","src/server/index.js"]': [Object],
+      '["p8Mgjoj/HFn+YFX8Y3njQQ==","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr","/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/html-webpack-plugin/lib/loader.js!/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html"]': [Object],
+      '["1B2M2Y8AsgTpgAmY7PhCfg==","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js"]': [Object]
+    },
+    __hardSourceModuleResolveCacheChange: [
+      '["p8Mgjoj/HFn+YFX8Y3njQQ==","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr","/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/html-webpack-plugin/lib/loader.js!/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html"]',
+      '["1B2M2Y8AsgTpgAmY7PhCfg==","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr","/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js"]'
+    ],
+    '/Users/dream/Desktop/git_manager/blend/packages/blend-react/node_modules/hard-source-webpack-plugin/lib/cachePrefix': '1B2M2Y8AsgTpgAmY7PhCfg==',
+    __hardSource_parityToken: ParityToken {
+      id: '1B2M2Y8AsgTpgAmY7PhCfg==',
+      token: '9fce65ad-c1bd-4053-b3df-3de3c58e6517',
+      isRoot: true,
+      ids: [Array]
+    },
+    fullHash: '2c5eb790ef5f91cb210cf6339b4d7bfc',
+    hash: '2c5eb790ef5f91cb210c',
+    fileDependencies: SortableSet [Set] {
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/.babelrc',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/index.html',
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/server/index.js',
+      _sortFn: undefined,
+      _lastActiveSortFn: undefined,
+      _cache: undefined,
+      _cacheOrderIndependent: undefined
+    },
+    contextDependencies: SortableSet [Set] {
+      '/Users/dream/Desktop/git_manager/blend/test/react/react-family-meals-ssr/src/static',
+      _sortFn: undefined,
+      _lastActiveSortFn: null,
+      _cache: undefined,
+      _cacheOrderIndependent: undefined
+    },
+    missingDependencies: SortableSet [Set] {
+      _sortFn: undefined,
+      _lastActiveSortFn: null,
+      _cache: undefined,
+      _cacheOrderIndependent: undefined
+    }
+  },
+  hash: '2c5eb790ef5f91cb210c',
+  startTime: 1598501572901,
+  endTime: 1598501573246
+}

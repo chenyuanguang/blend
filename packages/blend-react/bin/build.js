@@ -10,25 +10,25 @@ async function startBuild() {
     const compiler = webpack(config);
     compiler.run((err, stats) => {
         if (err) {
-            console.error(err.stack || err);
+            // console.error(err.stack || err);
             log(err.stack || err);
             if (err.details) {
-                console.error(err.details);
+                // console.error(err.details);
                 log(err.details);
             }
-            sp.fail('DLL打包出错,请查看log日志');
+
             return;
         }
 
         const info = stats.toJson();
 
         if (stats.hasErrors()) {
-            console.error(info.errors);
+            // console.error(info.errors);
             log(info.errors);
         }
 
         if (stats.hasWarnings()) {
-            console.warn(info.warnings);
+            // console.warn(info.warnings);
             log(info.warnings);
         }
 
