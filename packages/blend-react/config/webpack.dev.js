@@ -9,6 +9,7 @@
 var webpack = require('webpack');
 var config = require('./config');
 const { merge } = require('webpack-merge');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 const baseWebpack = require('./webpack.base.js');
 module.exports = merge(baseWebpack, {
     mode: 'development',
@@ -25,5 +26,12 @@ module.exports = merge(baseWebpack, {
         historyApiFallback: true,
     },
     devtool: config.dev.devtool,
-    plugins: [new webpack.HotModuleReplacementPlugin()],
+    plugins: [
+        new htmlWebpackPlugin({
+            filename: 'index.html',
+            template: config.base.templatePath,
+            minify: config.base.htmlMinify,
+        }),
+        new webpack.HotModuleReplacementPlugin(),
+    ],
 });

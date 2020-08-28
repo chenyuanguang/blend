@@ -5,7 +5,8 @@ const blendConfig = require(path.resolve(process.cwd(), 'blend.config.js'));
 const log = require('../utils/log');
 const spinner = require('blend-spinner');
 const chalk = require('chalk');
-const clientConfig = require('../config/webpack.dev.js');
+
+const clientConfig = require('../config/webpack.base.js');
 const clientCompiler = webpack(clientConfig);
 const { bfs, efs, fs } = require('blend-fs');
 const clientWatching = clientCompiler.watch(

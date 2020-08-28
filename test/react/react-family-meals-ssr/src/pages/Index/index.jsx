@@ -102,4 +102,5 @@ export default connect((state) => {
     // 获取多语言使用
     const [$$, local] = useLocales();
     return { ...state, $$, local };
+    return { ...state };
 })(Index);

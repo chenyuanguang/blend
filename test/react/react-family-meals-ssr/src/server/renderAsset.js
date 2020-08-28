@@ -1,6 +1,14 @@
+import request from '@src/utils/request';
+
 const fs = require('fs');
+const path = require('path');
 export default () => {
-    const assets = JSON.parse(fs.readFileSync('../sync.build.json', 'utf-8'));
+    const assets = JSON.parse(
+        fs.readFileSync(
+            path.resolve(process.cwd(), './sync.build.json'),
+            'utf-8'
+        )
+    );
     return {
         css: assets
             .map((i) => {

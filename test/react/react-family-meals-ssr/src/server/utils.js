@@ -6,7 +6,7 @@ import { StaticRouter } from 'react-router-dom';
 import renderRoutes from './renderRoutes';
 import { Provider } from 'react-redux';
 
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import renderAsset from './renderAsset';
 // import request from '@src/utils/request';
 
@@ -28,20 +28,25 @@ export default (store, routes, req, context) => {
     // const cssStr = context.css.length ? context.css.join('\n') : '';
 
     return `
-			<html>
-				<head>
-					${css}
-				</head>
-				<body>
-					<div id="root">${content}</div>
-					<script>
+			<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="/public/static/css/reset.css">
+				<title>Document</title>
+				${css}
+            </head>
+            <body>
+				<div id="root">${content}</div>
+				<script>
 						window.context = {
 							state: ${JSON.stringify(store.getState())}
 						}
 					</script>
 					${js}
-
-				</body>
-			</html>
+            </body>
+            </html>
 	  `;
 };

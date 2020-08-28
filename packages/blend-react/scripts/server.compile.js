@@ -6,8 +6,11 @@ const log = require('../utils/log');
 const serverConfig = require('../config/webpack.server.js');
 const spinner = require('blend-spinner');
 const chalk = require('chalk');
+const { fs, efs, bfs } = require('blend-fs');
+// 创建package.json
+require('../includes/server/package.build.js')();
+// 打包
 const serverCompiler = webpack(serverConfig);
-
 const serverWatching = serverCompiler.watch(
     {
         aggregateTimeout: 300, // 类似节流功能,聚合多个更改一起构建
@@ -18,6 +21,11 @@ const serverWatching = serverCompiler.watch(
     (err, stats) => {
         spinner().succeed(
             `${chalk.green('[server-compile]')} server code compile done`
+        );
+        console.log(
+            stats.toString({
+                colors: true,
+            })
         );
         log(
             stats.toString({

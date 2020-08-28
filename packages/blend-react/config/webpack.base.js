@@ -7,7 +7,7 @@
  * @FilePath: /react-router-redux-auto/config/webpack.base.js
  */
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const { bfs, efs, fs } = require('blend-fs');
@@ -44,7 +44,7 @@ module.exports = {
             ...(config.esLint.esLintUse ? eslintTest : []),
             ...require('./webpack.style.js'),
             {
-                test: /\.js|.jsx|.tsx$/,
+                test: /\.(js|jsx|tsx)$/,
                 use: ['babel-loader'],
             },
 
@@ -87,12 +87,6 @@ module.exports = {
         //     },
         // }),
         new HardSourceWebpackPlugin(), //代替dll文件的插件（webpack5推荐使用）
-
-        new htmlWebpackPlugin({
-            filename: 'index.html',
-            template: config.base.templatePath,
-            minify: config.base.htmlMinify,
-        }),
 
         new CopyWebpackPlugin({
             patterns: [

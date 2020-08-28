@@ -42,6 +42,8 @@
         "react-dom": "^16.13.1",
         "react-redux": "^7.1.9",
         "react-router-dom": "^5.2.0",
+        "react-router-config": "^5.1.1",
+        "redux-thunk": "^2.3.0",
         "redux": "^4.0.5",
         "sass-loader": "^9.0.3",
         "source-map-loader": "^1.0.1",
@@ -53,7 +55,9 @@
         "webpack-dev-server": "^3.11.0",
         "webpack-hot-middleware": "^2.25.0",
         "webpack-merge": "^5.1.1",
-        "webpack-node-externals": "^2.5.2"
+        "webpack-node-externals": "^2.5.2",
+        "koa": "^2.13.0",
+        "koa-static": "^5.0.0"
     },
     "author": "chenyuanguang <cygdream@qq.com>",
     "homepage": "https://github.com/chenyuanguang/blend#readme",

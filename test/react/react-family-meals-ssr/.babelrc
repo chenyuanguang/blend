@@ -1,12 +1,15 @@
 {
     "presets": [
-        "@babel/env",
-        "@babel/react",
+        "@babel/preset-env",
+        "@babel/preset-react",
         "@babel/preset-typescript" // 让babel支持ts（使用babel代替ts-loader）
     ],
     "plugins": [
         "@babel/plugin-transform-runtime",
-        "transform-react-jsx",
+        // // "@babel/plugin-syntax-dynamic-import",
+        // // "transform-react-jsx",
+        // "@babel/plugin-transform-react-jsx",
+        "@babel/transform-react-jsx",
         [
             "import",
             {

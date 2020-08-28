@@ -1,0 +1,73 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js install --mutex network:42424 --non-interactive
+
+PATH: 
+  /Users/dream/Desktop/git_manager/blend/node_modules/.bin:/Users/dream/Desktop/git_manager/node_modules/.bin:/Users/dream/Desktop/node_modules/.bin:/Users/dream/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/Users/dream/Desktop/procedure/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Docker.app/Contents/Resources/bin:/usr/local/bin/git:/Applications/VMware Fusion.app/Contents/Public:/Users/dream/Desktop/procedure/flutter/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, symlink '../../../packages/blend-spinner' -> '/Users/dream/Desktop/git_manager/blend/node_modules/blend-spawn/node_modules/blend-spinner'
+
+npm manifest: 
+  {
+      "name": "blend",
+      "private": true,
+      "workspaces": [
+          "packages/*"
+      ],
+      "scripts": {
+          "test-react": "node test/react/index",
+          "commit": "git-cz"
+      },
+      "config": {
+          "commitizen": {
+              "path": "./node_modules/cz-lerna-changelog"
+          }
+      },
+      "husky": {
+          "hooks": {
+              "pre-commit": "lint-staged"
+          }
+      },
+      "lint-staged": {
+          "*.ts": [
+              "eslint --fix",
+              "git add"
+          ]
+      },
+      "devDependencies": {
+          "@commitlint/cli": "^9.1.2",
+          "@commitlint/config-conventional": "^9.1.2",
+          "@typescript-eslint/eslint-plugin": "^3.9.1",
+          "@typescript-eslint/parser": "^3.9.1",
+          "commitizen": "^4.1.2",
+          "cz-lerna-changelog": "^2.0.3",
+          "husky": "^4.2.5",
+          "lerna": "^3.22.1",
+          "lint-staged": "^10.2.11",
+          "standard": "^14.3.4",
+          "blend-spawn": "file:./packages/blend-spawn",
+          "blend-spinner": "file:./packages/blend-spinner",
+          "blend-fs": "file:./packages/blend-fs"
+      },
+      "dependencies": {},
+      "version": "0.0.2",
+      "main": "index.js",
+      "repository": "git@github.com:chenyuanguang/blend.git",
+      "author": "chenyuanguang<cygdream@qq.com>",
+      "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

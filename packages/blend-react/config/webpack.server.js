@@ -11,7 +11,7 @@ const serverConfig = {
         filename: 'index.js',
         path: path.resolve(process.cwd(), './dist/server'),
     },
-    externals: [nodeExternals()],
+    // externals: [nodeExternals()],
     node: {
         process: true, // boolean
     },

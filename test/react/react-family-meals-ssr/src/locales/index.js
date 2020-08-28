@@ -10,14 +10,17 @@ import en from './en.json';
 import zh from './zh.json';
 
 export default () => {
-    const search = window.location.href.match(/hl=\w+/);
-    const type = search && search[0]?.split('=')[1];
-    switch (type) {
-        case 'en': {
-            return [en, type];
-        }
-        default: {
-            return [zh, type];
+    if (typeof window !== 'undefined') {
+        const search = window.location.href.match(/hl=\w+/);
+        const type = search && search[0]?.split('=')[1];
+        switch (type) {
+            case 'en': {
+                return [en, type];
+            }
+            default: {
+                return [zh, type];
+            }
         }
     }
+    return [zh, 'zh'];
 };

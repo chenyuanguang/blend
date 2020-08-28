@@ -5,7 +5,7 @@
 
 import axios from 'axios';
 
-import parseError from './parse-error';
+// import parseError from './parse-error';
 
 // ============================================================================
 
@@ -15,9 +15,6 @@ import parseError from './parse-error';
  * - 如果提供了完整的 API URL，该前缀不会自动添加
  */
 export const apiBase = (() => {
-    if (__DEV__) {
-        return 'http://test.com/';
-    }
     return '/';
 })();
 
@@ -79,10 +76,6 @@ const request = (options = {}, ...args) => {
             settings.data = appendFormData(settings.data);
         }
 
-        if (__DEV__) {
-            console.warn('即将请求', settings);
-        }
-
         // 如果标记为需要下载，弹出新窗口进行下载，流程结束
         if (settings.ext && settings.ext.toLowerCase() === 'download') {
             window.open(settings.url);
@@ -109,7 +102,7 @@ const request = (options = {}, ...args) => {
                 return resolve(data);
             })
             .catch((err) => {
-                err = parseError(err);
+                // err = parseError(err);
 
                 reject(err);
             });

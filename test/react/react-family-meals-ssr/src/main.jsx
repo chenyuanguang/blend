@@ -7,7 +7,9 @@ import './app.css';
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router />
+        <Router />,
     </Provider>,
     document.getElementById('root')
 );
+
+// ReactDOM.render(<div>sdfsdsa</div>, document.getElementById('root'));

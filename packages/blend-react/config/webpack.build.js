@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var config = require('./config');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 const { merge } = require('webpack-merge');
 const baseWebpack = require('./webpack.base.js');
 
@@ -38,6 +39,11 @@ module.exports = merge(baseWebpack, {
         //     name: "common.js",
         //     filename: "js/common.js"
         // }),
+        new htmlWebpackPlugin({
+            filename: 'index.html',
+            template: config.base.templatePath,
+            minify: config.base.htmlMinify,
+        }),
         new UglifyJsPlugin({
             uglifyOptions: {
                 include: /\/src/,
