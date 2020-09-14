@@ -53,6 +53,11 @@ class Index extends Component {
                         <li>
                             <Link to="/ts-demo">ts使用案例</Link>
                         </li>
+                        <li>
+                            <Link to="/render-list-demo">
+                                RenderListDemo使用案例
+                            </Link>
+                        </li>
                     </ul>
                 </section>
                 <section className={c(style.section, style.packages)}>
@@ -60,7 +65,6 @@ class Index extends Component {
                     <ul>
                         {Object.entries(tec?.dependencies || {}).map(
                             (i, index) => {
-                                console.log(i);
                                 return (
                                     <li key={i[0]}>
                                         <span>{i[0]}</span>
@@ -82,7 +86,6 @@ class Index extends Component {
                     <ul>
                         {Object.entries(tec?.devDependencies || {}).map(
                             (i, index) => {
-                                console.log(i);
                                 return (
                                     <li key={i[0]}>
                                         <span>{i[0]}</span>

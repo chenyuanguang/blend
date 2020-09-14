@@ -4,11 +4,9 @@
         "@babel/preset-react",
         "@babel/preset-typescript" // 让babel支持ts（使用babel代替ts-loader）
     ],
+    "sourceType": "unambiguous",
     "plugins": [
         "@babel/plugin-transform-runtime",
-        // // "@babel/plugin-syntax-dynamic-import",
-        // // "transform-react-jsx",
-        // "@babel/plugin-transform-react-jsx",
         "@babel/transform-react-jsx",
         [
             "import",

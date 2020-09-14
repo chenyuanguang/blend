@@ -8,7 +8,6 @@ import DispatchCom from './DispatchCom';
 const HooksDemo = () => {
     const reducer = useDemoReducer({ age: 10 });
     const [state, reset] = reducer;
-    console.log(state, reset);
 
     return (
         <DemoContext.Provider value={reducer}>

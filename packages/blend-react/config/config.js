@@ -13,10 +13,10 @@ module.exports = deepExtend(
     {
         // webpack基本配置
         base: {
-            entry: path.join(process.cwd(), './src/main.jsx'),
+            entry: path.join(process.cwd(), './src/main/client/main.jsx'),
             outputPath: path.join(process.cwd(), './dist'),
             outputFileName: '[id]-[name]-[hash].js',
-            templatePath: './src/index.html',
+            templatePath: './src/main/client/index.html',
             publicPath: '/',
             htmlMinify: {
                 removeComments: true, //去除注释
@@ -68,7 +68,7 @@ module.exports = deepExtend(
 
         //   eslint相关配置
         esLint: {
-            esLintUse: true, //是否使用eslint
+            esLintUse: false, //是否使用eslint
         },
     },
     require(path.resolve(process.cwd(), './blend.config.js'))

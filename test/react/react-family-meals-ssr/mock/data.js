@@ -6,12 +6,14 @@
  * @Description: chenyuanguang
  * @FilePath: /react-router-redux-auto/mock/data.js
  */
-var Mock = require('mockjs');
+
+// import Mock from 'mockjs';
+const Mock = require('mockjs');
 
 // eslint-disable-next-line no-unused-vars
-var Random = Mock.Random;
+let Random = Mock.Random;
 
-var list = Mock.mock({
+let list = Mock.mock({
     // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
     'list|1-100': [
         {
@@ -24,5 +26,4 @@ var list = Mock.mock({
         },
     ],
 });
-
 module.exports = list;

@@ -17,7 +17,7 @@ const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const deviceHtml = require('./device');
 
-if (!bfs.isExist(path.resolve(process.cwd(), './src/index.html'))) {
+if (!bfs.isExist(path.resolve(process.cwd(), './src/main/client/index.html'))) {
     deviceHtml();
 }
 

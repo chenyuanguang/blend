@@ -15,7 +15,7 @@ import axios from 'axios';
  * - 如果提供了完整的 API URL，该前缀不会自动添加
  */
 export const apiBase = (() => {
-    return '/';
+    return 'http://localhost:3000/';
 })();
 
 /** @type {string[]} 必须存在的传入的属性 */
@@ -71,16 +71,17 @@ const request = (options = {}, ...args) => {
             }
         }
 
-        // 如果数据为 FormData，追加默认参数
-        if (settings.data instanceof FormData) {
-            settings.data = appendFormData(settings.data);
-        }
+        // // 如果数据为 FormData，追加默认参数
+        // if (settings.data instanceof FormData) {
+        //     settings.data = appendFormData(settings.data);
+        // }
 
         // 如果标记为需要下载，弹出新窗口进行下载，流程结束
         if (settings.ext && settings.ext.toLowerCase() === 'download') {
             window.open(settings.url);
             return;
         }
+        console.log('--------------', settings);
 
         axios(settings)
             .then((res) => {
@@ -165,16 +166,16 @@ export const getUrl = (api, params = {}) => {
  * @param {FormData} formData
  * @returns {FormData}
  */
-export const appendFormData = (formData) => {
-    if (!(formData instanceof FormData)) {
-        return formData;
-    }
+// export const appendFormData = (formData) => {
+//     if (!(formData instanceof FormData)) {
+//         return formData;
+//     }
 
-    for (const [key, value] of Object.entries(getDefaults())) {
-        if (!formData.has(key)) {
-            formData.append(key, value);
-        }
-    }
+//     for (const [key, value] of Object.entries(getDefaults())) {
+//         if (!formData.has(key)) {
+//             formData.append(key, value);
+//         }
+//     }
 
-    return formData;
-};
+//     return formData;
+// };

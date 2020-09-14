@@ -24,6 +24,7 @@ async function startDevServer() {
         spawn(
             `node ${path.resolve(__dirname, '../scripts/client.compile.js')} `
         );
+
         return;
     }
 
